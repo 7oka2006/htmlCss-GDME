@@ -1,0 +1,70 @@
+.feature-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; 
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.feature-icon {
+    font-size: 48px;
+    color: #007bff; 
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: #666; /* Testo grigio chiaro */
+}
+.container {
+    display: flex; /* Usa flexbox per affiancare l'immagine e il testo */
+    align-items: center; /* Allinea verticalmente al centro */
+}
+
+.container img {
+    width: 150px; /* Imposta la larghezza dell'immagine */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    margin-right: 20px; /* Spazio tra l'immagine e il testo */
+}
+
+.text {
+    font-size: 20px; /* Dimensione del testo */
+    font-weight: bold; /* Grassetto */
+    color: #333; /* Colore del testo */
+}
+.container  {
+    display: flex;
+    align-items: center;
+    margin-top: 20px ; /* (top) */
+}
+
+.container :left {
+    display: flex;
+    align-items: center;
+    margin-left: 20px ; /* (top) */
+}
+.container :right {
+    display: flex;
+    align-items: center;
+    margin-right: 20px ; /* (top) */
+}
+.container img {
+    width: 200px; /* Larghezza iniziale */
+    transition: transform 0.3s ease; /* Transizione morbida */
+}
+
+.container img:hover {
+    transform: scale(1.5); /* Ingrandisce l'immagine al passaggio del mouse */
+}

@@ -1,0 +1,20 @@
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+}
+    .black-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  
+    .black-button:hover {
+      background-color: #333;
+    }

@@ -28,3 +28,46 @@
     font-size: 14px;
     color: #666;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 40px;
+}
+
+.overlay-text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.overlay-text p {
+    font-size: 1.5rem;
+}

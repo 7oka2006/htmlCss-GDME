@@ -1,73 +1,145 @@
-.feature-box {
-    text-align: center;
-    padding: 20px;
-    border: 1px solid #ddd; 
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #fff; 
-}
+/* Importazione font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-.feature-box:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-}
-
-.feature-icon {
-    font-size: 48px;
-    color: #007bff; 
-    margin-bottom: 15px;
-}
-
-.feature-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.feature-description {
-    font-size: 14px;
-    color: #666;
-}
-
+/* Reset e stili globali */
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 50px;
 }
 
-.navbar-brand img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.image-container {
-    position: relative;
-    text-align: center;
-    margin-top: 20px;
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 40px;
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #023047, #219ebc);
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 20px;
+  margin: 20px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-.overlay-text {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+/* Animazioni */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.overlay-text h1 {
-    font-size: 3rem;
-    font-weight: bold;
+/* Pulsanti */
+.btn-animato {
+  transition: all 0.3s ease-in-out;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.btn-animato:hover {
+  transform: scale(1.1);
+  background-color: #fb8500;
+  color: white;
 }
 
-.overlay-text p {
-    font-size: 1.5rem;
+.btn-book-demo {
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-book-demo:hover {
+  background-color: #5a009b;
+}
+
+/* Feature Box */
+.feature-box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #fff;
+  margin-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.feature-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Titoli e Descrizioni */
+.animated-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; /* Riduce lo spazio interno */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 20px; /* Riduce la dimensione dell'icona */
+  height: 20px; /* Riduce la dimensione dell'icona */
+  margin-right: 5px; /* Spazio tra icona e testo */
+}
+
+.logo-text {
+  font-size: 16px; /* Riduce la dimensione del testo */
+  font-weight: bold;
 }

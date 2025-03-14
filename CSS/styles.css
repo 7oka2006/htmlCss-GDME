@@ -1,0 +1,30 @@
+.feature-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; 
+}
+
+.feature-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.feature-icon {
+    font-size: 48px;
+    color: #007bff; 
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature-description {
+    font-size: 14px;
+    color: #666;
+}

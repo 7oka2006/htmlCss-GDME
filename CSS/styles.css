@@ -143,3 +143,25 @@ body {
   font-size: 16px; /* Riduce la dimensione del testo */
   font-weight: bold;
 }
+
+.footer {
+  background-color: #1a1a1a;
+}
+
+.footer .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer .fab {
+  font-size: 1.2rem;
+}
+
+.footer .list-unstyled li a {
+  transition: color 0.3s ease;
+}
+
+.footer .list-unstyled li a:hover {
+  color: #ff5733; /* Cambia colore al passaggio del mouse */
+}
+

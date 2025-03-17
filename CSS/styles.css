@@ -165,3 +165,14 @@ body {
   color: #ff5733; /* Cambia colore al passaggio del mouse */
 }
 
+/* Rimozione della sottolineatura e stile del link "team" */
+.team-link {
+  text-decoration: none; /* Rimuove la sottolineatura */
+  color: inherit; /* Mantiene il colore del testo ereditato */
+}
+
+/* Stile per l'immagine all'interno del link */
+.team-link img {
+  border: none; /* Rimuove eventuali bordi intorno all'immagine */
+  vertical-align: middle; /* Allinea l'immagine al centro rispetto al testo */
+}
